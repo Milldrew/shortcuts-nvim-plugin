@@ -4,5 +4,12 @@ This repository is for rewriting a neovim plugin that automatically creates shor
 User Story: 
 </h2>
   <p>
-  The user can download the plugin using packer package manager. On startup the package checks a set which includes the capital letter version of each alphabetical character A-Z. If the user has set the value of one of these letters to a 
+  <li>
+  The user can download the plugin using packer package manager. On startup the package checks a set which includes the capital letter version of each alphabetical character A-Z. These characters will act as the command prefix. The command will act is a shortcut.
+  </li>
+  <li>If an environemnt variable exists whose name matches a character in the set. The value of that environment variable will be used as the root directory.</li>
+  <li>The user can set the root directory of the project and set the command prefix</li>
+  <li>We will find the first three letters of every directory in the project and use those letters as the command suffix</li>
+  <li>If their is a name collision the command will be incremented for example. If there are three directories in the project whose names start with the letters com. The following commands will be created Acom Acom1 Acom2</li>
+  <li></li>
   </p>
